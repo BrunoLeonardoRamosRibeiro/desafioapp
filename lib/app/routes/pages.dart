@@ -1,15 +1,27 @@
+import 'package:desafioapp/app/features/home/bindings/home_binding.dart';
+import 'package:desafioapp/app/features/home/home_page.dart';
+import 'package:desafioapp/app/features/posts/posts_page.dart';
+import 'package:desafioapp/app/features/splash/bindings/splash_binding.dart';
+import 'package:desafioapp/app/features/splash/splash_page.dart';
+import 'package:desafioapp/app/routes/routes.dart';
 import 'package:get/get.dart';
 
 class AppPages {
   static List<GetPage> pages = [
 
-    // GetPage(name: ROUTE_SPLASH, page: () => SplashPage()),
-    // GetPage(
-    //   name: ROUTE_LOGIN,
-    //   page: () => LoginPage(),
-    //   binding: LoginBinding(),
-    //   transition: Transition.zoom,
-    // ),
+     GetPage(name: Routes.ROUTE_SPLASH, page: () => SplashPage(), binding: SplashBinding()),
+    GetPage(
+      name: Routes.ROUTE_HOME,
+      page: () => HomePage(),
+      binding: HomeBinding(),
+      transition: Transition.zoom,
+    ),
+    GetPage(
+      name: Routes.ROUTE_POSTS,
+      page: () => PostsPage(),
+      //binding: LoginBinding(),
+      transition: Transition.zoom,
+    ),
     // GetPage(
     //   name: ROUTE_SELECT_COMPANY,
     //   page: () => SelectCompanyPage(),

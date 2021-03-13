@@ -7,11 +7,12 @@ enum MyError {
   NO_DATA,
 }
 
-
-
 class AppAssets {
-  static const LOGOTIPO = 'assets/images/MULLER.png';
 
+  static const LOGOTIPO = 'assets/images/MULLER.png';
+  static const URL_POSTS = 'https://jsonplaceholder.typicode.com/posts';
+  static const URL_ALBUMS = 'https://jsonplaceholder.typicode.com/albums';
+  static const URL_TODOS = 'https://jsonplaceholder.typicode.com/todos';
 
   static String erro(MyError value) {
     switch (value) {
