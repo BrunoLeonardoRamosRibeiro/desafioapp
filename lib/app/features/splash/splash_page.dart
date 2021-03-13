@@ -6,11 +6,16 @@ class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<SplashController>(
-      builder: (controller)=> Scaffold(
+      builder: (controller) => Scaffold(
         body: Stack(
           children: [
             Center(
-              child: Text('Desafio Técnico Framework'),
+              child: Text(
+                'Desafio Técnico Framework',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
             Align(
               alignment: Alignment.bottomCenter,

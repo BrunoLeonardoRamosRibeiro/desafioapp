@@ -8,7 +8,6 @@ enum MyError {
 }
 
 class AppAssets {
-
   static const LOGOTIPO = 'assets/images/MULLER.png';
   static const URL_POSTS = 'https://jsonplaceholder.typicode.com/posts';
   static const URL_ALBUMS = 'https://jsonplaceholder.typicode.com/albums';
@@ -37,8 +36,4 @@ class AppAssets {
           color: Colors.white,
         ));
   }
-
-
-
 }
-

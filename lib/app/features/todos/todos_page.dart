@@ -1,9 +1,9 @@
 import 'package:desafioapp/app/controllers/global_controller.dart';
-import 'package:desafioapp/app/features/posts/widgets/posts_list_widget.dart';
+import 'package:desafioapp/app/features/todos/widgets/todos_list_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class PostsPage extends StatelessWidget {
+class ToDosPage extends StatelessWidget {
   GlobalController globalController = Get.find<GlobalController>();
 
   @override
@@ -18,9 +18,9 @@ class PostsPage extends StatelessWidget {
           children: [
             Obx(
               () => Visibility(
-                visible: globalController.posts.length > 0,
-                replacement: Center(child: Text('Sem postagens para apresentar')),
-                child: PostsListWidget(),
+                visible: globalController.toDos.length > 0,
+                replacement: Center(child: Text('Sem To-Dos para apresentar')),
+                child: ToDosListWidget(),
               ),
             ),
           ],

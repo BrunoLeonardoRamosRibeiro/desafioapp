@@ -36,38 +36,44 @@ class HomePage extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8),
-              child: Card(
-                child: ListTile(
-                  title: Text(
-                    'Álbuns',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
+              child: InkWell(
+                onTap: () => controller.onClickAlbums(),
+                child: Card(
+                  child: ListTile(
+                    title: Text(
+                      'Álbuns',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                  ),
-                  subtitle: Text('Relação de álbuns'),
-                  leading: Icon(
-                    Icons.picture_in_picture_outlined,
-                    size: 48,
+                    subtitle: Text('Relação de álbuns'),
+                    leading: Icon(
+                      Icons.picture_in_picture_outlined,
+                      size: 48,
+                    ),
                   ),
                 ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8),
-              child: Card(
-                child: ListTile(
-                  title: Text(
-                    'To-dos',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
+              child: InkWell(
+                onTap: () => controller.onClickToDos(),
+                child: Card(
+                  child: ListTile(
+                    title: Text(
+                      'To-dos',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                  ),
-                  subtitle: Text('Relação de To-dos'),
-                  leading: Icon(
-                    Icons.check_box_outlined,
-                    size: 48,
+                    subtitle: Text('Relação de To-dos'),
+                    leading: Icon(
+                      Icons.check_box_outlined,
+                      size: 48,
+                    ),
                   ),
                 ),
               ),

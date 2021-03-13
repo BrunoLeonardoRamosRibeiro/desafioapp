@@ -6,15 +6,15 @@ import 'package:get/get.dart';
 class SplashController extends GetxController {
 
   GlobalController globalController;
-
   SplashController({@required this.globalController});
 
 
   @override
   void onInit() {
     super.onInit();
-    print('Iniciei o SplashController');
     globalController.fetchPosts();
+    globalController.fetchAlbums();
+    globalController.fetchToDos();
   }
 
   @override
