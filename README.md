@@ -1,16 +1,28 @@
 # desafioapp
 
-Desafio Framework
+Desafio Técnico Framework
 
-## Getting Started
+Este desafio consiste em contruir uma aplicação em Flutter que irá sincronizar as listagens da API Rest para o banco local ao iniciar a aplicação.
 
-This project is a starting point for a Flutter application.
+Esta aplicação deve conter os menus:
+POSTAGENS
+ALBUNS
+TO-DOs
 
-A few resources to get you started if this is your first Flutter project:
+Toda a aplicação deve funcionar com o banco local sincronizado inicialmente. 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+A API a ser utilizada está publicada em https://jsonplaceholder.typicode.com/
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Observações
+
+Este projeto foi desenvolvido utilizando a versão 2.0.1 do Flutter
+
+Para Gerência de Estado, Reatividade e Injeção de Dependencia utilizamos o GetX.
+
+Packages utilizados e suas versões:
+ -  Shared Preferences: shared_preferences: ^2.0.4
+ -  GetX: get: ^3.26.0
+ -  HTTP: http: ^0.13.0
+ -  DartZ: dartz: ^0.9.2
+
+
