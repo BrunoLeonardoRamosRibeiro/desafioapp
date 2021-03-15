@@ -5,9 +5,9 @@ Desafio Técnico Framework
 Este desafio consiste em contruir uma aplicação em Flutter que irá sincronizar as listagens da API Rest para o banco local ao iniciar a aplicação.
 
 Esta aplicação deve conter os menus:
-POSTAGENS
-ALBUNS
-TO-DOs
+- POSTAGENS
+- ALBUNS
+- TO-DOs
 
 Toda a aplicação deve funcionar com o banco local sincronizado inicialmente. 
 
