@@ -10,7 +10,7 @@ class ToDosPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Relação de TO-Dos'),
+        title: Text('Relação de TO-DOs'),
       ),
       body: SingleChildScrollView(
         child: Column(
